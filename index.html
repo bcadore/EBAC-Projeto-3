@@ -58,7 +58,7 @@
               >
             </li>
             <li class="nav-item fw-bold">
-              <a href="#" class="nav-link">
+              <a href="#fale-conosco" class="nav-link">
                 <i class="bi bi-chat-left-text me-1"></i>
                 Fale conosco</a
               >
@@ -68,22 +68,26 @@
       </div>
     </header>
 
-    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="cabecalho"
+      data-bs-smooth-scroll="true"
+    >
       <!--Carousel -- "sobre o restaurante"-->
       <section id="sobre-o-restaurante">
         <div class="carousel slide" data-bs-ride="carousel" id="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="3000">
               <img
-                src="./images/slides/slide1.png"
+                src="images/slides/slide1.png"
                 alt="Foto do espaço interno do restaurante"
               />
             </div>
             <div class="carousel-item" data-bs-interval="3000">
-              <img src="./images/slides/slide2.png" alt="Duas taças de vinho" />
+              <img src="images/slides/slide2.png" alt="Duas taças de vinho" />
             </div>
             <div class="carousel-item" data-bs-interval="3000">
-              <img src="./images/slides/slide3.png" alt="Uma mesa com comida" />
+              <img src="images/slides/slide3.png" alt="Uma mesa com comida" />
             </div>
           </div>
           <button
@@ -106,8 +110,8 @@
             <button
               type="button"
               data-bs-target="#carousel"
-              data-bs-slide-to="0"
               class="active"
+              data-bs-slide-to="0"
             ></button>
             <button
               type="button"
@@ -120,41 +124,41 @@
               data-bs-slide-to="2"
             ></button>
           </div>
-          <div class="pt-5 pb-5">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-5">
-                  <img
-                    class="d-block w-100 rounded"
-                    src="./images/restaurante.jpg"
-                    alt="Foto do espaço interno do restaurante"
-                  />
-                </div>
-                <div class="col-md-7">
-                  <h2 class="section-title">
-                    Sobre <span class="text-colored">o restaurante</span>
-                  </h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Incidunt quam quo tenetur iusto, aut, id nulla et natus
-                    exercitationem sint, saepe distinctio ad maxime! Expedita
-                    iste minus aspernatur dolores recusandae.
-                  </p>
-                  <h3 class="section-title">
-                    Sobre <span class="text-colored">o espaço</span>
-                  </h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repellendus consequatur nobis officia ipsum dignissimos
-                    voluptate ad, eum iure, ratione harum culpa doloremque nisi.
-                    Vitae reiciendis iusto maiores, explicabo alias facere.
-                  </p>
-                  <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                  </ul>
-                </div>
+        </div>
+        <div class="pt-5 pb-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5">
+                <img
+                  src="images/restaurante.jpg"
+                  class="d-block w-100 rounded"
+                  alt="Foto do espaço interno do restaurante"
+                />
+              </div>
+              <div class="col-md-7 mt-3 mt-md-0">
+                <h2 class="section-title">
+                  Sobre <span class="text-colored">o restaurante</span>
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Cupiditate, id dolorum harum quo consequatur perferendis natus
+                  repudiandae optio ipsa voluptates enim ipsam corrupti labore
+                  iusto explicabo? Voluptas recusandae quas cumque.
+                </p>
+                <h3 class="section-title">
+                  Sobre <span class="text-colored">o espaço</span>
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                  accusantium officiis numquam quos iure velit natus alias ut
+                  reprehenderit dolor! Eius autem molestias fugit quisquam
+                  ducimus explicabo aliquid provident asperiores?
+                </p>
+                <ul>
+                  <li>Item 1</li>
+                  <li>Item 2</li>
+                  <li>Item 3</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -414,6 +418,91 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--"Fale conosco"-->
+      <section id="fale-conosco" class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title text-center">
+              Fale <span class="text-colored">conosco</span>
+            </h2>
+          </div>
+          <div class="row">
+            <div class="col-md-7 mb-5">
+              <!--Formulário da seção-->
+              <form>
+                <div class="mb-3">
+                  <label for="nome" class="form-label fw-bold text-colored"
+                    >Seu nome</label
+                  >
+                  <input type="text" id="nome" class="form-control" required />
+                </div>
+                <div class="mb-4">
+                  <label for="email" class="form-label fw-bold text-colored"
+                    >Seu e-mail</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="mb-4">
+                  <label for="telefone" class="form-label fw-bold text-colored"
+                    >Seu telefone (opcional)</label
+                  >
+                  <input type="tel" id="telefone" class="form-control" />
+                </div>
+                <div class="mb-4">
+                  <label for="mensagem" class="form-label fw-bold text-colored"
+                    >Sua mensagem</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="mensagem"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn fw-bold">Enviar</button>
+              </form>
+            </div>
+
+            <div class="col-md-5">
+              <div class="row">
+                <h3 class="section-title fs-4 text-colored">
+                  <i class="bi bi-hand-thumbs-up-fill"></i>
+                  Redes sociais
+                </h3>
+                <ul class="social-links">
+                  <li class="fs-5">
+                    <a href="#">
+                      <i class="bi bi-facebook text-colored"></i>
+                    </a>
+                  </li>
+                  <li class="fs-5 ms-1 me-1">
+                    <a href="#">
+                      <i class="bi bi-instagram text-colored"></i>
+                    </a>
+                  </li>
+                  <li class="fs-5">
+                    <a href="#">
+                      <i class="bi bi-whatsapp text-colored"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="row mt-4">
+                <h3 class="section-title fs-4 text-colored">
+                  <i class="bi bi-cursor-fill"></i>
+                  Endereço
+                </h3>
+                <p>Rua Teste Exemplo nº 123 - Bairro Bootstrap.</p>
               </div>
             </div>
           </div>
